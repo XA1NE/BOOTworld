@@ -1,0 +1,319 @@
+.container {
+  max-width: 540px;
+	display: grid;
+  width: 100%;
+  padding-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+	border: 1px solid darkgray;
+	border-top-width: 0px;
+}
+
+.content-box {
+	background-color: lightgray;
+	padding: 5px;
+	display: grid;
+}
+
+header {
+	margin-bottom: 27px !important;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+#welcome {
+	grid-template-columns: 1fr;
+}
+
+#new-in-the-shop {
+	grid-template-columns: 1fr;
+}
+
+#footer-info {
+	grid-row-gap: 0;
+}
+
+section {
+	grid-gap: 15px;
+}
+
+#new-shop-items {
+	margin-top: 10px;
+	padding-bottom: 30px;
+}
+
+#new-shop-items > div > h2 {
+	font-size: 1.5rem;
+	font-family: 'BebasNeue';
+}
+
+#new-shop-items > div > span > b {
+  color: black;
+  font-family: system-ui;
+}
+
+#new-shop-items > div {
+  color: #28931b;
+  font-family: system-ui;
+  display: grid;
+  margin-bottom: 15px;
+	font-size: 0.9rem;
+}
+
+.grid-container {
+	display: grid;
+}
+
+.grid-item {
+	display: grid;
+}
+
+.row {
+	display: grid;
+	margin: 0 10px;
+}
+
+.section-title {
+	font-size: 1.5rem;
+	font-family: 'BebasNeue';
+}
+
+.section-text {
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-top: 7px;
+}
+
+.section-text a {
+  color: #28931b;
+}
+
+.responsive-img {
+	width: 100%;
+	height: auto;
+}
+
+/* Larger screen overrides */
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 950px;
+  }
+
+  .content-box {
+		background-color: lightgray;
+		padding: 15px;
+		display: grid;
+		grid-row-gap: 10px;
+	}
+
+	#welcome {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 15px;
+	}
+
+	#new-in-the-shop {
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 15px;
+		display: grid;
+	}
+  
+  section {
+		border: 1px solid darkgray;
+		grid-gap: 15px;
+		padding: 15px;
+	}
+
+	.section-title {
+		font-size: 1.85rem;
+	}
+
+	.section-text {
+	  font-family: system-ui;
+	  font-weight: 400;
+	  font-size: 1.4rem;
+	  line-height: 1.2;
+	  margin-top: 7px;
+	}
+
+	.section-image {
+		border: 1px solid darkgray;
+	}
+
+	#new-shop-items {
+		margin-top: 10px;
+		padding-bottom: 30px;
+		grid-row-gap: 15px;
+	}
+
+	.menu-button {
+		display: none;
+	}
+
+	.info-links {
+		display: inline-block !important;
+		text-align: right;
+	  color: #247223;
+	  font-family: system-ui;
+		font-size: 0.7rem;
+		font-weight: 600;
+	}
+
+	.info-links li {
+		margin: 0 5px;
+	}
+
+	nav {
+		display: inline-block !important;
+	}
+
+	nav li {
+		display: inline-block !important;
+		font-family: 'BebasNeue';
+		background-color: darkgray;
+		list-style: none;
+		text-align: center;
+		margin-right: 10px;
+		color: black;
+		font-weight: 450;
+		box-shadow: 2px 2px black;
+		padding: 5px 22px;
+	}
+
+	nav li:first-child {
+		background-color: lightgray;
+	}
+
+	.row {
+		display: grid;
+		margin: 0 15px 15px;
+	}
+}
+
+/* Header */
+
+.logo {
+	font-family: 'BebasNeue';
+  text-shadow: 2px 2px black;
+  color: #247223;
+}
+
+.logo > * {
+	all: unset;
+}
+
+.logo h1 {
+	font-size: 3.3rem;
+	display: inline-block;
+  font-weight: normal;
+}
+
+.logo h2 {
+	font-size: 2.4rem;
+	display: inline-block;
+  font-weight: normal;
+}
+
+.menu-button {
+  border: 2px solid black;
+  border-radius: 15px;
+  min-width: 60px;
+  max-height: 30px;
+  justify-self: right;
+  margin-top: 10px;
+}
+
+nav {
+	display: none;
+}
+
+.info-links {
+	display: none;
+}
+
+.info-links li {
+	margin: 0 5px;
+}
+
+.highlighted-link{
+	text-decoration: underline;
+	color: #247223;
+	font-size: 0.9rem;
+}
+
+.posted-by {
+	text-align: right;
+	font-style: italic;
+	font-size:  0.8rem;
+}
+
+.sidebar {
+	display: grid;
+	grid-row-gap: 15px;
+	padding-bottom: 30px;
+}
+
+#subscription-form {
+	background-color: white;
+	grid-row-gap: 15px;
+	margin-bottom: 15px;
+}
+
+.small-title {
+	font-size: 1.3rem;
+	font-family: 'BebasNeue';
+} 
+
+.sign-up-button {
+	width: 70px;
+}
+
+span {
+  font-family: system-ui;
+  font-size: 0.9rem;
+}
+
+label {
+  font-family: system-ui;
+  font-size: 0.8rem;
+}
+
+/* Helpers */
+
+.mb-15 {
+	margin-bottom: 15px;
+}
+
+.mt-15 {
+	margin-top: 15px;
+}
+
+/* Default element styling reset */
+
+li {
+	display: inline-block;
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	all: unset;
+}
+
+a, h1, h2, h3 {
+  all: unset;
+}
+
+body {
+	margin: 0;
+}
+
+/* Font */
+
+@font-face {
+  font-family: BebasNeue;
+  src: url('../fonts/BebasNeue-webfont.woff') format('woff');
+}
+
